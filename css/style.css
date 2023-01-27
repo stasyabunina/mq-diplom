@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('OpenSansRegular'),
+    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('OpenSansBold'),
+    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+  border-style: none;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6em;
+  background-color: white;
+}
+
+main {
+  display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1660px;
+  padding: 0 247px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  padding-bottom: 125px;
+  padding-top: 26px;
+  margin-bottom: 59px;
+  background-image: url(../images/banner-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.header-wrapper {
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  width: 179px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.nav-list-item:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: auto;
+}
+
+.header-title {
+  position: relative;
+  max-width: 687px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.67em;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  color: #fff;
+}
+
+.burger {
+  width: 23px;
+  height: 20px;
+  display: none;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-line {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.burger-line:first-child {
+  top: 0;
+}
+
+.burger-line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.burger-line:last-child {
+  bottom: 0;
+}
+
+@media (max-width: 1200px) and (min-width: 641px) {
+  .header {
+    padding-top: 43px;
+    padding-bottom: 112px;
+    background-image: url(../images/banner-bg-tablet.jpg);
+    background-position: bottom center;
+  }
+
+  .container {
+    padding: 0 35px;
+  }
+
+  .header-wrapper {
+    margin-bottom: 84px;
+  }
+
+  .logo {
+    width: 158px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header-title {
+    max-width: 620px;
+    font-size: 40px;
+    line-height: 1.38em;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 31px;
+    padding-bottom: 211px;
+    background-image: url(../images/banner-mobile.jpg);
+    background-position: bottom center;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+  
+  .header-wrapper {
+    flex-direction: column-reverse;
+    margin-bottom: 29px;
+  }
+
+  .logo {
+    width: 269px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 174px;
+  }
+
+  .header-title {
+    font-size: 26px;
+    line-height: 1.38em;
+  }  
+}
