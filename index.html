@@ -386,7 +386,7 @@
       <a class="copyright-link" href="#">Copyright © 2009–2019 City Blog LLC.</a>
     </footer>
   </div>
-  <div class="popup-wrapper">
+  <div class="popup-wrapper visually-hidden">
     <div class="popup">
       <h2 class="section-title popup-title">Ваш фидбек</h2>
       <form action="/" class="popup-form" method="post">
@@ -403,12 +403,14 @@
           <span class="popup-text-second">Вы подписаны на e-mail рассылку?</span>
           <div class="popup-checkbox-wrapper">
             <label class="popup-checkbox-text-wrapper" tabindex="0">
-              <input type="radio" class="popup-checkbox visually-hidden" name="e-mail subscription" value="yes" checked>
+              <input type="radio" class="popup-checkbox visually-hidden" name="Вы подписаны на e-mail рассылку?"
+                value="Да" checked>
               <span class="visual-check"></span>
               <span class="popup-text checkbox-text">Да</span>
             </label>
             <label class="popup-checkbox-text-wrapper" tabindex="0">
-              <input type="radio" class="popup-checkbox visually-hidden" name="e-mail subscription" value="no">
+              <input type="radio" class="popup-checkbox visually-hidden" name="Вы подписаны на e-mail рассылку?"
+                value="Нет">
               <span class="visual-check"></span>
               <span class="popup-text checkbox-text">Нет</span>
             </label>
@@ -416,7 +418,8 @@
         </div>
         <label class="popup-label-last">
           <span class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-          <input type="textarea" placeholder="Может, больше рецептов?" class="popup-input popup-textarea" name="Какой контент вы хотели бы видеть на нашем сайте?">
+          <textarea placeholder="Может, больше рецептов?" class="popup-input popup-textarea"
+            name="Какой контент вы хотели бы видеть на нашем сайте?"></textarea>
         </label>
         <button class="popup-btn">Отправить</button>
       </form>
