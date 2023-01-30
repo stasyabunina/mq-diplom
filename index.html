@@ -386,6 +386,43 @@
       <a class="copyright-link" href="#">Copyright © 2009–2019 City Blog LLC.</a>
     </footer>
   </div>
+  <div class="popup-wrapper">
+    <div class="popup">
+      <h2 class="section-title popup-title">Ваш фидбек</h2>
+      <form action="/" class="popup-form" method="post">
+        <label class="popup-label">
+          <span class="popup-text">Как часто вы заходите на сайт?</span>
+          <select class="popup-select popup-input" name="Как часто вы заходите на сайт?">
+            <option value="Почти каждый день" class="popup-option">Почти каждый день</option>
+            <option value="Раз в несколько дней" class="popup-option">Раз в несколько дней</option>
+            <option value="Раз в несколько недель" class="popup-option">Раз в несколько недель</option>
+            <option value="Несколько раз в год" class="popup-option">Несколько раз в год</option>
+          </select>
+        </label>
+        <div class="popup-label">
+          <span class="popup-text-second">Вы подписаны на e-mail рассылку?</span>
+          <div class="popup-checkbox-wrapper">
+            <label class="popup-checkbox-text-wrapper" tabindex="0">
+              <input type="radio" class="popup-checkbox visually-hidden" name="e-mail subscription" value="yes" checked>
+              <span class="visual-check"></span>
+              <span class="popup-text checkbox-text">Да</span>
+            </label>
+            <label class="popup-checkbox-text-wrapper" tabindex="0">
+              <input type="radio" class="popup-checkbox visually-hidden" name="e-mail subscription" value="no">
+              <span class="visual-check"></span>
+              <span class="popup-text checkbox-text">Нет</span>
+            </label>
+          </div>
+        </div>
+        <label class="popup-label-last">
+          <span class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <input type="textarea" placeholder="Может, больше рецептов?" class="popup-input popup-textarea" name="Какой контент вы хотели бы видеть на нашем сайте?">
+        </label>
+        <button class="popup-btn">Отправить</button>
+      </form>
+      <button class="popup-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    </div>
+  </div>
 </body>
 
 </html>
